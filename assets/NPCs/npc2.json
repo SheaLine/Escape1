@@ -1,0 +1,44 @@
+{"frames": {
+
+"Idle-0.png":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":34},
+	"sourceSize": {"w":16,"h":34}
+},
+"Idle-1.png":
+{
+	"frame": {"x":17,"y":0,"w":17,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+	"sourceSize": {"w":17,"h":34}
+},
+"Idle-2.png":
+{
+	"frame": {"x":34,"y":0,"w":17,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+	"sourceSize": {"w":17,"h":34}
+},
+"Idle-3.png":
+{
+	"frame": {"x":51,"y":0,"w":17,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+	"sourceSize": {"w":17,"h":34}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "npc2.png",
+	"format": "RGBA8888",
+	"size": {"w":68,"h":34},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a63845a8f739169b8d0c5baff90c96bf:ba1ab19b65575dc483b0629ad40a6d41:9d9b165b7a755e630a3fd49cfd4bc506$"
+}
+}

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="132">
+ <editorsettings>
+  <export target="miniGame2.tmj" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="maze" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../maze.png" width="526" height="518"/>
+ </tileset>
+ <layer id="1" name="background" width="30" height="19" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="walls">
+  <object id="2" type="wall" x="238" y="53" width="488.006" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="3" type="wall" x="722" y="56.8583" width="4.02639" height="456.121">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="4" type="wall" x="234" y="84" width="34.1818" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="5" type="wall" x="234" y="86.8657" width="4.04348" height="457.946">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="6" type="wall" x="237.455" y="540.998" width="488.755" height="4.00202">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="7" type="wall" x="324.957" y="56.8696" width="4.04348" height="30.121">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="8" type="wall" x="295.004" y="84" width="30.418" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="9" type="wall" x="294.957" y="86.6364" width="4.07905" height="61.3636">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="10" type="wall" x="263.75" y="145" width="31.375" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="11" type="wall" x="263.938" y="113.992" width="4.0625" height="31.7798">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="12" type="wall" x="237.75" y="206" width="30.25" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="13" type="wall" x="264" y="174.75" width="65.125" height="4.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="14" type="wall" x="294.75" y="176.875" width="4.375" height="32.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="15" type="wall" x="297.875" y="205.875" width="31.25" height="3.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" type="wall" x="325" y="114.005" width="4" height="60.9946">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="17" type="wall" x="325" y="114.011" width="96.0682" height="3.98913">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="18" type="wall" x="355.953" y="117.818" width="4.04743" height="122.209">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="23" type="wall" x="385.938" y="145" width="4.0625" height="64">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="24" type="wall" x="388.5" y="206.045" width="92.6667" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="25" type="wall" x="416.924" y="116.277" width="4.1087" height="89.9728">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="26" type="wall" x="420.091" y="144.943" width="30.9131" height="3.08239">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="27" type="wall" x="446.978" y="83.9278" width="4.02222" height="61.25">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="29" type="wall" x="356" y="83.9394" width="34.0606" height="3.09091">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="30" type="wall" x="385.818" y="86.5455" width="4.27273" height="28.4545">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="31" type="wall" x="417" y="56.1818" width="4" height="30.6364">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="32" type="wall" x="477.909" y="83.9091" width="4" height="91.8182">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="33" type="wall" x="446.92" y="174.932" width="96.2102" height="3.88636">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="34" type="wall" x="481.563" y="144.938" width="30.4375" height="3.0625">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="35" type="wall" x="538.938" y="55.875" width="4.1875" height="119.5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="36" type="wall" x="508.063" y="56.25" width="3.9375" height="61.6875">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="37" type="wall" x="569" y="83.9091" width="3.84848" height="125.097">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="38" type="wall" x="600.091" y="83.9091" width="4.54545" height="64.1818">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="39" type="wall" x="603.364" y="144.909" width="30.7273" height="3.09091">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="40" type="wall" x="630" y="55.8788" width="4" height="89.9394">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="41" type="wall" x="660.875" y="84.125" width="4.375" height="63.75">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="42" type="wall" x="664.957" y="144.957" width="29.9407" height="3.04348">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="44" type="wall" x="690.869" y="83.9091" width="4.13636" height="34.0227">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="45" type="wall" x="694.438" y="114" width="28.7273" height="3.9375">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="46" type="wall" x="690.818" y="146.818" width="4.18182" height="32.0909">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="47" type="wall" x="572.727" y="175" width="120.773" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="48" type="wall" x="690.75" y="206" width="4.25" height="34">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="49" type="wall" x="691.875" y="236" width="31.375" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="50" type="wall" x="599.938" y="206.125" width="34.125" height="2.8125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="51" type="wall" x="629.875" y="208.5" width="4.1875" height="61.25">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="52" type="wall" x="599.875" y="267" width="33.875" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="53" type="wall" x="660.875" y="178.625" width="4.0625" height="91.3314">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="54" type="wall" x="663.818" y="267" width="31.1818" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="55" type="wall" x="690.938" y="269.5" width="4" height="31.375">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="56" type="wall" x="446.75" y="297" width="246.125" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="57" type="wall" x="477.875" y="267.125" width="3.875" height="32.5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="58" type="wall" x="599.875" y="269.75" width="4.125" height="29">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="59" type="wall" x="538.896" y="205.979" width="33.3125" height="3.02083">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="60" type="wall" x="538.909" y="208.636" width="4.18182" height="61.0909">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="61" type="wall" x="542.25" y="267" width="30.625" height="2.875">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="62" type="wall" x="569" y="236" width="3.875" height="32.5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="63" type="wall" x="571.75" y="236" width="32.125" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="64" type="wall" x="507.75" y="176.875" width="4.25" height="93.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="65" type="wall" x="477.875" y="235.875" width="32.625" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="66" type="wall" x="446.75" y="207.875" width="4.25" height="89.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="67" type="wall" x="356" y="266.875" width="92.75" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="68" type="wall" x="355.938" y="268.938" width="4" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="69" type="wall" x="264.004" y="235.96" width="157" height="3.94862">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="70" type="wall" x="325" y="238" width="3.90909" height="31.9091">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="71" type="wall" x="264" y="238.091" width="3.90909" height="62.9407">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="72" type="wall" x="237.391" y="297" width="27.2174" height="4.04348">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="73" type="wall" x="294.938" y="267" width="4.125" height="216.795">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="75" type="wall" x="297.909" y="296.636" width="60.9091" height="4.36364">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="76" type="wall" x="264" y="328" width="33.25" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="77" type="wall" x="386" y="297" width="35" height="4.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="78" type="wall" x="416.875" y="300.625" width="4.125" height="183.417">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="79" type="wall" x="419.875" y="479.875" width="31.1742" height="4.25">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="80" type="wall" x="446.909" y="418.909" width="4.09091" height="123.727">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="81" type="wall" x="325" y="327.938" width="4.125" height="63.8125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="82" type="wall" x="326.938" y="327.938" width="63.2216" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="83" type="wall" x="421" y="357.969" width="30" height="4.03125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="84" type="wall" x="421" y="327.875" width="61.0217" height="3.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="85" type="wall" x="478" y="330" width="4.04348" height="62.034">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="86" type="wall" x="446.969" y="389" width="65.0625" height="3.03125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="87" type="wall" x="507.938" y="300.5" width="4.0625" height="61.5625">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="88" type="wall" x="511.25" y="357.938" width="31.4148" height="4.125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="89" type="wall" x="538.938" y="328.031" width="184.167" height="2.96875">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="90" type="wall" x="568.957" y="330.058" width="4.04348" height="61.8551">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="91" type="wall" x="600" y="357.963" width="3.9375" height="64.975">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="92" type="wall" x="602.978" y="357.978" width="92.0773" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="93" type="wall" x="660.909" y="360.091" width="4" height="31.7273">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="94" type="wall" x="629.969" y="389" width="34.0625" height="2.96875">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="95" type="wall" x="629.969" y="391.469" width="5.03125" height="92.5189">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="96" type="wall" x="539.016" y="480" width="91.6359" height="4.04348">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="97" type="wall" x="539" y="481.906" width="3.96875" height="32.0625">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="98" type="wall" x="541.969" y="510.969" width="31.0625" height="3.03125">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="99" type="wall" x="691.043" y="450" width="32.1028" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="100" type="wall" x="690.913" y="389" width="4.13043" height="33.7905">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="101" type="wall" x="661" y="419.043" width="30.6838" height="3.91304">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="102" type="wall" x="660.957" y="421.623" width="4.08696" height="92.3768">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="103" type="wall" x="691" y="480.017" width="3.94318" height="33.892">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="105" type="wall" x="664.625" y="479.969" width="28.7926" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="106" type="wall" x="599.969" y="511" width="4.03125" height="31.375">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="107" type="wall" x="602.956" y="510.978" width="61.404" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="108" type="wall" x="507.818" y="391.03" width="4.1798" height="122.966">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="109" type="wall" x="478" y="449.938" width="65.0313" height="3.0625">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="110" type="wall" x="569" y="418.818" width="3.96443" height="62.2045">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="111" type="wall" x="572.415" y="449.957" width="31.585" height="3.04348">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="112" type="wall" x="538.957" y="361.522" width="4" height="61.4783">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="113" type="wall" x="542" y="418.913" width="28.7772" height="4.08696">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="114" type="wall" x="449.818" y="419" width="32.0909" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="115" type="wall" x="477.98" y="479.98" width="4.0404" height="62.4444">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="116" type="wall" x="263.914" y="510.969" width="157.117" height="3.09375">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="117" type="wall" x="385.938" y="329.75" width="4.0625" height="182.438">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="119" type="wall" x="324.969" y="480" width="62.0625" height="3.96875">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="120" type="wall" x="355.938" y="358.063" width="4.0625" height="95">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="121" type="wall" x="325" y="450" width="33.1111" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="122" type="wall" x="296.909" y="418.994" width="60.9091" height="4.00606">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="123" type="wall" x="263.909" y="480" width="4.09091" height="32.5455">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="124" type="wall" x="265.455" y="479.996" width="31.2727" height="3.97778">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="125" type="wall" x="263.978" y="418.976" width="4" height="34.002">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="126" type="wall" x="237" y="418.956" width="28.4667" height="4.02222">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="127" type="wall" x="264" y="388.938" width="32.3182" height="3">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="128" type="wall" x="237.359" y="357.984" width="30.6406" height="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Westminster';
+            src: url('./assets/WESTM.TTF') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'FutureMillennium';
+            src: url('./assets/FutureMillennium.ttf') format('truetype');
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+        }
+        #description {
+            width: 400px;
+            height: 700px;
+            padding: 10px;
+            margin-left: 50px;
+            background-color: #ffffff;
+            align-items: right;
+        }
+    </style>
+    <title>Platformer Starter Kit</title>
+    <script src="./lib/phaser.js"></script>
+    <script src="./src/Scenes/Load.js"></script>
+    <script src="./src/Scenes/title.js"></script>
+    <script src="./src/Scenes/Escape.js"></script>
+    <script src="./src/Scenes/miniGame1.js"></script>
+    <script src="./src/Scenes/miniGame2.js"></script>
+    <script src="./src/Scenes/won.js"></script>
+    <script src="./src/Sprites/player.js"></script>
+    <script src="./src/Sprites/dog.js"></script>
+    <script src="./src/Sprites/bubble.js"></script>
+    <script src="./src/Sprites/lights.js"></script>
+    <script src="./src/Sprites/guard.js"></script>
+    <script src="./src/Sprites/npc1.js"></script>
+    <script src="./src/Sprites/npc2.js"></script>
+    <script src="./src/Sprites/npc3.js"></script>
+    <script src="./src/main.js"></script>
+</head>
+<body>
+    <div id="phaser-game"></div>
+    <span id="description"></span>
+</body>
+</html>
