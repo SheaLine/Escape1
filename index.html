@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @font-face {
-            font-family: 'Westminster';
-            src: url('./assets/WESTM.TTF') format('truetype');
-        }
-
-        @font-face {
             font-family: 'FutureMillennium';
             src: url('./assets/FutureMillennium.ttf') format('truetype');
         }
@@ -21,14 +16,15 @@
         }
         #description {
             width: 400px;
-            height: 700px;
+            height: 590px;
             padding: 10px;
             margin-left: 50px;
-            background-color: #ffffff;
+            background-color: #d9d9d9;
+            z-index: 10;
             align-items: right;
         }
     </style>
-    <title>Platformer Starter Kit</title>
+    <title>Escape 1</title>
     <script src="./lib/phaser.js"></script>
     <script src="./src/Scenes/Load.js"></script>
     <script src="./src/Scenes/title.js"></script>
@@ -48,6 +44,6 @@
 </head>
 <body>
     <div id="phaser-game"></div>
-    <span id="description"></span>
+    <div id="description"></div>
 </body>
 </html>

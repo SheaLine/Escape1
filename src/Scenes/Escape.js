@@ -44,6 +44,7 @@ class Escape extends Phaser.Scene {
     }
 
     create(){
+        document.getElementById('description').innerHTML = '<h2>Controls: </h2>Left Cursor: move left <br> Right Cursor: move right <br> Shift: sprint <h2>How To Play: </h2>Escape the prison, the guards can see you when you are under the light!<br><h2>GOOD LUCK!!</h2>';
 
         //lighting
         this.lights.enable();
